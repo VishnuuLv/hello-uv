@@ -7,6 +7,6 @@ def main():
     response = requests.get("https://pypi.org/pypi/requests/json", timeout=10)
     data = response.json()
     print("Latest requests on PyPI:", data["info"]["version"])
-
+    print("Hello from feature branch!")
 if __name__=="__main__":
     main()
